@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -89,12 +89,13 @@ button {
 
 .bullets {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .bullets>* {
-    flex-grow: 1;
+    flex: 0 0 140px;
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -102,7 +103,7 @@ button {
 
 .square {
     min-height: 140px;
-    min-width: 100px;
+    min-width: 140px;
     border: 3px solid #3882F6;
     border-radius: 10px;
 }
